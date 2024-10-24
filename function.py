@@ -72,7 +72,6 @@ class Rastrigin(OptimizationFunction):
     def recommended_range(cls) -> tuple[float, float]:
         return -5.12, 5.12
 
-
 class Griewank(OptimizationFunction):
 
     @classmethod
@@ -82,7 +81,7 @@ class Griewank(OptimizationFunction):
 
     @classmethod
     def recommended_range(cls) -> tuple[float, float]:
-        return -600, 600
+        return -5, 5
 
 
 class Levy(OptimizationFunction):
