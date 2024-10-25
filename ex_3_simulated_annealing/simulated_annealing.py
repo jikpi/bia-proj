@@ -27,7 +27,7 @@ class SimulatedAnnealing:
     def range_scale(self):
         return (self.uB - self.lB) / self.range_scale_divisor
 
-    def generate_neighbors(self, current_solution: np.ndarray, num_neighbors: int = 50) -> List[np.ndarray]:
+    def generate_neighbors(self, current_solution: np.ndarray, num_neighbors: int = 1) -> List[np.ndarray]:
         neighbors = []
         for _ in range(num_neighbors):
             neighbor = current_solution + np.random.normal(0, self.range_scale(), self.dimension)
