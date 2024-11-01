@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
 
-from ex_4_ga_tsp.ga_tsp_solver import GenerationData
+from ex_4_ga_tsp.ga_tsp_solver import TspGaGenerationData
 
 
-def create_city_path_animation(generations_data: list[GenerationData],
+def create_city_path_animation(generations_data: list[TspGaGenerationData],
                                fig_size=(12, 8),
                                animation_interval=500,
                                city_marker_size=100,
@@ -82,7 +82,7 @@ def create_city_path_animation(generations_data: list[GenerationData],
 from typing import List
 
 
-def visualize_city_evolution(generation_data: List[GenerationData],
+def visualize_city_evolution(generation_data: List[TspGaGenerationData],
                              x_size: float = 1000,
                              y_size: float = 1000,
                              interval: int = 1000,

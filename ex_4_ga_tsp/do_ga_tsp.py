@@ -7,4 +7,3 @@ def run_ga_tsp():
     ga_stp.search()
     visualize_city_evolution(ga_stp.ent_bygen_list, 1000, 1000, city_seed=ga_stp.initial_city_seed,
                              solution_seed=ga_stp.solution_seed, city_size=ga_stp.np)
-    pass
