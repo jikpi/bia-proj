@@ -4,6 +4,7 @@ from ex_3_simulated_annealing.all_simulated_annealing import do_all_simulated_an
 from ex_4_ga_tsp.do_ga_tsp import run_ga_tsp
 from ex_5_ga_de.do_ga_de import run_ga_de
 from ex_6_pso.do_pso import run_pso
+from ex_7_soma.do_soma import run_soma
 
 if __name__ == "__main__":
     # Blind search pro vsechny funkce
@@ -16,12 +17,15 @@ if __name__ == "__main__":
     # do_all_simulated_annealing()
 
     # Genetic algorithm TSP
-    #run_ga_tsp()
+    # run_ga_tsp()
 
     # Differential evolution
-    #run_ga_de()
+    # run_ga_de()
 
     # Particle swarm optimization
-    run_pso()
+    # run_pso()
+
+    # SOMA
+    run_soma()
 
 pass
