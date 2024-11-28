@@ -40,7 +40,7 @@ class PsoSolver:
         while m < self.migration_max:
             for i, particle in enumerate(self.swarms[-1].particles):
                 # vypocet nove velocity
-                w = 0.9 - ((0.5 * m) / self.migration_max)
+                w = 0.9 - ((0.5 * m) / self.migration_max)  # intertia, zmensuje se linearni s poctem mutaci
                 r1 = random()
                 new_velocity = particle.velocity * w + self.c1 * r1 * (
                         particle.best_params - particle.params) + r1 * self.c2 * (

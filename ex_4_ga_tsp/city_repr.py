@@ -9,6 +9,9 @@ class City:
         self.id = cid
 
     def distance(self, other_city):
+        if other_city.x == self.x and other_city.y == self.y:
+            return 0
+
         # euklidovska vzdalenost mezi dvema mesty
         return np.sqrt((self.x - other_city.x) ** 2 + (self.y - other_city.y) ** 2)
 
