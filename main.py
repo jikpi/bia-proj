@@ -6,6 +6,7 @@ from ex_5_ga_de.do_ga_de import run_ga_de
 from ex_6_pso.do_pso import run_pso
 from ex_7_soma.do_soma import run_soma
 from ex_8_aco.do_aco_tsp import run_aco_tsp
+from ex_9_firefly.do_firefly import run_firefly
 
 if __name__ == "__main__":
     # Blind search pro vsechny funkce
@@ -30,6 +31,9 @@ if __name__ == "__main__":
     #run_soma()
 
     # ACO TSP
-    run_aco_tsp()
+    # run_aco_tsp()
+
+    # Firefly
+    run_firefly()
 
 pass

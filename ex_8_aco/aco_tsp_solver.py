@@ -107,20 +107,13 @@ class AcoTspSolver:
                     # vyber dalsiho mesta pro mravence
                     # styl 'rulety'
                     random_val = random.random()
-                    cumulative = 0
+                    prob_sum = 0
                     selected_city = None
-                    broken = False
                     for city, prob in probabilities.items():
-                        cumulative += prob
-                        if cumulative >= random_val:
+                        prob_sum += prob
+                        if prob_sum >= random_val:
                             selected_city = city
-                            broken = True
                             break
-
-                    # pokud by nastala chyba ve vyberu (muze se u stylu rulety vyjimecne stat ze by nebylo vybrano mesto
-                    # kvuli floating point erroru)
-                    if not broken:
-                        selected_city = list(probabilities.keys())[-1]
 
                     ant.distance += self.city_distance_matrix[ant.visited_cities[-1], selected_city]
                     ant.visited_cities.append(selected_city)
