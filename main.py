@@ -6,6 +6,7 @@ from ex6_lsystems.ls_solver import ls_solve
 from ex7_ifs.ifs_solver import ifs_solve
 from ex8_tea.tea_set_solver import ts_solve
 from ex9_terrain.terrain_solver import terrain_solve
+from ex10_lm.lm_solver import lm_solve, lm_solve_ann
 
 if __name__ == "__main__":
     # Vystupy ve slozce 'Outputs'
@@ -28,10 +29,18 @@ if __name__ == "__main__":
     # print('IFS ########################')
     # ifs_solve()
 
-    print('TEA ########################')
-    ts_solve()
+    #print('TEA ########################')
+    #ts_solve()
 
-    print('Terrain ########################')
-    terrain_solve()
+    #print('Terrain ########################')
+    #terrain_solve()
+
+    # todo: pytorch pro CPU: 'pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu'
+    # todo: + 'pip install scikit-learn'
+    # pro jistotu jsem dal outputy do slozky 'ex10_lm' pro tento task
+
+    print('LM ########################')
+    lm_solve()
+    lm_solve_ann()
 
 pass
