@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-from ex11_forestfire.forest_fire import ForestFire
+from ex12_forestfire.forest_fire import ForestFire
 
 
 def ff_solve_pygame():

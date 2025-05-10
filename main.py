@@ -1,4 +1,4 @@
-from ex11_forestfire.ff_solver import ff_solve_pygame, ff_solve_matplotlib
+from ex12_forestfire.ff_solver import ff_solve_pygame, ff_solve_matplotlib
 from ex1_2_perceptron import perceptron_solver
 from ex1_2_perceptron import xor_solver
 from ex3_hopfield.hopfield_solver import hopfield_solve
