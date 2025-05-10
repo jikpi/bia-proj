@@ -1,3 +1,4 @@
+from ex11_forestfire.ff_solver import ff_solve_pygame, ff_solve_matplotlib
 from ex1_2_perceptron import perceptron_solver
 from ex1_2_perceptron import xor_solver
 from ex3_hopfield.hopfield_solver import hopfield_solve
@@ -29,11 +30,11 @@ if __name__ == "__main__":
     # print('IFS ########################')
     # ifs_solve()
 
-    #print('TEA ########################')
-    #ts_solve()
+    # print('TEA ########################')
+    # ts_solve()
 
-    #print('Terrain ########################')
-    #terrain_solve()
+    # print('Terrain ########################')
+    # terrain_solve()
 
     # todo: pytorch pro CPU: 'pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu'
     # todo: + 'pip install scikit-learn'
@@ -42,5 +43,9 @@ if __name__ == "__main__":
     print('LM ########################')
     lm_solve()
     lm_solve_ann()
+
+    print('FF ########################')
+    ff_solve_pygame()  # todo: pygame pro nekonecnou simulaci
+    # ff_solve_matplotlib()  # nebo matploblib, ale neni nekonecna
 
 pass
