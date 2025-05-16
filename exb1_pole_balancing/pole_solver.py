@@ -47,7 +47,7 @@ def pole_solve():
     # misto hledani syra, kde se q hodnoty ukladaly do tabulky, je nutne pro tento problem pouzit NN
     # (tento problem je oproti hledani syra kontinualni - nutne pouzit NN pro aproximaci Q funkce)
 
-    episode_count = 1000  # max pocet epizod pro trenink, epizoda = 1 pokus agenta o vyreseni problemu
+    episode_count = 2000  # max pocet epizod pro trenink, epizoda = 1 pokus agenta o vyreseni problemu
     target_network_update_count = 10  # jak casto aktualizovat NN pro target (stabilizace uceni)
 
     # 500 je maximalni skore pro tento problem
@@ -108,7 +108,7 @@ def pole_solve():
         # early stop
         if len(episode_rewards) >= 50:
             avg_reward = np.mean(episode_rewards[-50:])
-            if avg_reward >= 200.0:
+            if avg_reward >= 250.0:
                 print(f"Early stopping: Reward: {avg_reward:.2f}")
                 break
 
