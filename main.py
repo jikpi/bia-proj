@@ -8,6 +8,7 @@ from ex7_ifs.ifs_solver import ifs_solve
 from ex8_tea.tea_set_solver import ts_solve
 from ex9_terrain.terrain_solver import terrain_solve
 from ex10_lm.lm_solver import lm_solve, lm_solve_ann
+from exb1_pole_balancing.pole_solver import pole_solve
 
 if __name__ == "__main__":
     # Vystupy ve slozce 'Outputs'
@@ -40,12 +41,16 @@ if __name__ == "__main__":
     # todo: + 'pip install scikit-learn'
     # pro jistotu jsem dal outputy do slozky 'ex10_lm' pro tento task
 
-    print('LM ########################')
-    lm_solve()
-    lm_solve_ann()
+    # print('LM ########################')
+    # lm_solve()
+    # lm_solve_ann()
 
-    print('FF ########################')
-    ff_solve_pygame()  # todo: pygame pro nekonecnou simulaci
+    # print('FF ########################')
+    # ff_solve_pygame()  # todo: pygame pro nekonecnou simulaci
     # ff_solve_matplotlib()  # nebo matploblib, ale neni nekonecna
+
+    # todo: minule todo, + 'gymnasium'
+    print('Pole balancing ########################')
+    pole_solve()
 
 pass
